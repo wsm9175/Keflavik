@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MyScheduleImageUploadActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="47dp"
+        android:text="실측 사진 업로드"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소지"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/adressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:text="과천힐스테이트 3401동 526호"
+            android:textColor="#545454"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작업"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/workTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="안전방충망망"
+            android:textColor="#545454"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--완료하기 이미지 넣기 전 finishBefordLinearLayout-->
+    <LinearLayout
+        android:id="@+id/finishBefordLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageUploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/custom_yello_button"
+            android:drawableStart="@drawable/ic_baseline_add_circle_outline_24_yello"
+            android:gravity="center_vertical"
+            android:padding="17dp"
+            android:paddingStart="120dp"
+            android:text="실측사진 업로드 하기"
+            android:textColor="@color/yellow_main" />
+
+        <Button
+            android:id="@+id/orderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/main_ADADAD_gray"
+            android:gravity="center"
+            android:padding="17dp"
+            android:clickable="false"
+            android:text="업로드하고 발주 넣기"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <!--완료하기 이미지 넣은 후 finishAfterLinearLayout-->
+    <LinearLayout
+        android:id="@+id/finishAfterLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/addImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_preview_photo"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <Button
+            android:id="@+id/oderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/yellow_main"
+            android:text="업로드하고 발주 넣기"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!--결제하기 이미지 넣기 전 paymentBefordLinearLayout
+    버튼들은 2로
+    -->
+    <LinearLayout
+        android:id="@+id/paymentBefordLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageUploadBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/custom_yello_button"
+            android:drawableStart="@drawable/ic_baseline_add_circle_outline_24_yello"
+            android:gravity="center_vertical"
+            android:padding="17dp"
+            android:paddingStart="90dp"
+            android:text="시공사진 업로드 하기(1장 이상)"
+            android:textColor="@color/yellow_main" />
+
+        <Button
+            android:id="@+id/orderBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/main_ADADAD_gray"
+            android:gravity="center"
+            android:padding="17dp"
+            android:text="고객에게 전송 및 결제 청구"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <!--결제하기 이미지 넣은 후 paymentBefordLinearLayout
+    -->
+    <LinearLayout
+        android:id="@+id/paymentAfterLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+<!--        <ImageView
+            android:id="@+id/addImg2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_preview_photo"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:visibility="gone"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/custom_round_button_gray"
+
+            android:gravity="center_vertical"
+            android:padding="17dp"
+
+            android:paddingStart="90dp"
+            android:drawableStart="@drawable/ic_baseline_add_circle_outline_24_gray"
+            android:text="시공사진 업로드 하기(1장 이상)"
+            android:textColor="@color/main_ADADAD_gray" />
+
+        <Button
+            android:id="@+id/oderBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/yellow_main"
+            android:gravity="center"
+            android:padding="17dp"
+            android:text="고객에게 전송 및 결제 청구"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

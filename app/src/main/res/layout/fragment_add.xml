@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_margin="17dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:backgroundTint="#EAEAEA"
+                    android:background="@drawable/custom_radio_thema"
+                    android:paddingTop="3dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="3dp"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/apartmentBtn"
+                        android:button="@null"
+                        android:backgroundTint="@drawable/menu_selected_button_color"
+                        android:background="@drawable/custom_radio_thema"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="아파트"
+                        android:textColor="@drawable/menu_selected_text_color"
+
+
+                        />
+
+                    <RadioButton
+                        android:backgroundTint="@drawable/menu_selected_button_color"
+                        android:background="@drawable/custom_radio_thema"
+                        android:id="@+id/guestAdressBtn"
+                        android:button="@null"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:checked="true"
+                        android:text="고객주소"
+                        android:textColor="@drawable/menu_selected_text_color"
+                        />
+
+                    <RadioButton
+                        android:backgroundTint="@drawable/menu_selected_button_color"
+                        android:background="@drawable/custom_radio_thema"
+                        android:id="@+id/workBtn"
+                        android:button="@null"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@drawable/menu_selected_text_color"
+
+                        android:text="작업" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/addLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

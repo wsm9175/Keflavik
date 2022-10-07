@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phone">
+        <item>SKT</item>
+        <item>KT</item>
+        <item>LGU+</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>직접 입력</item>
+        <item>naver.com</item>
+        <item>hanmail.net</item>
+        <item>nate.com</item>
+        <item>gmail.com</item>
+        <item>yahoo.com</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>10대</item>
+        <item>20대</item>
+        <item>30대</item>
+        <item>40대</item>
+        <item>50대 이상</item>
+    </string-array>
+
+    <string-array name="career">
+        <item>신입</item>
+        <item>1년 미만</item>
+        <item>1~3년</item>
+        <item>3~5년</item>
+        <item>5년 이상</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>1월</item>
+        <item>2월</item>
+        <item>3월</item>
+        <item>4월</item>
+        <item>5월</item>
+        <item>6월</item>
+        <item>7월</item>
+        <item>8월</item>
+        <item>9월</item>
+        <item>10월</item>
+        <item>11월</item>
+        <item>12월</item>
+    </string-array>
+
+</resources>

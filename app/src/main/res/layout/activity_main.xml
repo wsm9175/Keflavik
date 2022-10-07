@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity"
+        android:orientation="vertical">
+
+<!--
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />-->
+
+        <FrameLayout
+            android:id="@+id/fragmentContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/menu_selected_color"
+            app:itemTextColor="@drawable/menu_selected_color"
+            />
+
+    </LinearLayout>
+
+    <!--애니메이션 화면 전환-->
+    <LinearLayout
+        android:id="@+id/animBottomMenuLinearLayout"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:background="@drawable/custom_botton_menu_bar"
+        android:layout_gravity="center_horizontal|bottom"
+
+        android:layout_marginBottom="95dp"
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mySchedulrRadioBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:button="@color/white"
+                android:background="@drawable/custom_main_bottom_icon_schedulr_selector"/>
+
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/myCalendarRadioBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:button="@color/white"
+                android:background="@drawable/custom_main_bottom_icon_calendar_selector"/>
+
+            <RadioButton
+                android:id="@+id/nullBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+<!--
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_main_center_button2"
+        android:elevation="3dp"/>-->
+
+
+    <CheckBox
+        android:id="@+id/menuInvisibleChebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@color/yellow_main"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_main_center_button"
+        android:button="@color/yellow_main"
+        android:elevation="3dp"
+        />
+
+</FrameLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_background_color_gray"
+        android:paddingTop="16dp">
+
+        <!--android:backgroundTint="@color/yellow_main"-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_yello_button"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:hint="동,호수,고객 전화번호 검색"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="전체 보기"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/cityRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cityNameButtonRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/workCityTitleRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            />
+
+    </LinearLayout>
+</layout>

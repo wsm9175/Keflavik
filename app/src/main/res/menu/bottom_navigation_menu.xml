@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/work"
+        android:icon="@drawable/bottomwork"
+        android:title="작업" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/bottomadd"
+        android:title="생성" />
+
+    <item
+        android:id="@+id/center"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/advice"
+        android:icon="@drawable/bottonadvice"
+        android:title="상담" />
+
+    <item
+        android:id="@+id/admin"
+        android:icon="@drawable/bottomadmin"
+       android:title="관리자" />
+</menu>

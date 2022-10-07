@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        android:background="@drawable/custom_month_background"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/workSuccessTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_work_success_check_selector"
+            android:gravity="center"
+            android:text="시공"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미세방충망"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/workAdressTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="과천힐스테이트 3302동 103호"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/work_adress_sub_color"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/work_adress_sub_color"
+                android:text="오전 09:00"/>
+
+            <TextView
+                android:id="@+id/workStateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/work_success"
+                android:text="결제청구"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

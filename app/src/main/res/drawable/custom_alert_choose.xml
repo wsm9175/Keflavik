@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/choose_bussiness_gray"></solid>
+
+<!--    <style android:name="my_dialog" android:parent="Theme.AppCompat.Dialog.Alert">
+        <item android:name="windowMinWidthMajor">50%</item>
+        <item android:name="windowMinWidthMinor">50%</item>
+    </style>-->
+
+
+
+    <corners
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp"></corners>
+</shape>
